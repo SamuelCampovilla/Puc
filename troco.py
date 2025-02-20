@@ -1,5 +1,5 @@
-c = int(input("Digite o valor da compra "))
-p = int(input("Digite o valor do pagamento "))
+c = int(input("Digite o valor da compra ").replace("R$", ""))
+p = int(input("Digite o valor do pagamento ").replace("R$", ""))
 t = (c-p) * -1
 def main():
     if p < c:
@@ -32,3 +32,4 @@ def em():
         print("R$ 10,00 0 cédulas")
 
 main ()
+
